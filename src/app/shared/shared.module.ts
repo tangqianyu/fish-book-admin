@@ -4,7 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NB_MODULES } from './shared-nb';
 import { MatRippleModule } from '@angular/material/core';
-import { DynamicFormModule } from './modules/dynamic-form';
+import { FormlyFieldsModule } from './modules/formly-fields/formly-fields.module';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 
 // #region third libs
 // import { NgxTinymceModule } from 'ngx-tinymce';
@@ -13,7 +14,7 @@ const THIRDMODULES: Array<Type<any>> = [];
 // #endregion
 
 // #region your componets & directives
-const COMPONENTS: Array<Type<any>> = [];
+const COMPONENTS: Array<Type<any>> = [DynamicFormComponent];
 const DIRECTIVES: Array<Type<any>> = [];
 // #endregion
 
@@ -24,7 +25,7 @@ const DIRECTIVES: Array<Type<any>> = [];
     ReactiveFormsModule,
     RouterModule,
     MatRippleModule,
-    DynamicFormModule,
+    FormlyFieldsModule,
     ...NB_MODULES,
     // third libs
     ...THIRDMODULES
@@ -40,7 +41,7 @@ const DIRECTIVES: Array<Type<any>> = [];
     ReactiveFormsModule,
     RouterModule,
     MatRippleModule,
-    DynamicFormModule,
+    FormlyFieldsModule,
     ...NB_MODULES,
     // third libs
     ...THIRDMODULES,

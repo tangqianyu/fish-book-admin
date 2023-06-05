@@ -15,7 +15,7 @@ export class DynamicFormComponent implements OnInit {
   @Input() submitStatus: string = 'primary';
   @Input() submitLoading: boolean = false;
   @Input() resetText: string | null = 'Reset';
-  @Input() resetStatus: string = '';
+  @Input() resetStatus: string = 'danger';
   @Input() resetLoading: boolean = false;
   @Output() onSubmit = new EventEmitter<any>();
 

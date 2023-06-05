@@ -1,0 +1,8 @@
+<div class="form-group flex-col">
+  <label class="label">{{props.label}}</label>
+  <nb-select [placeholder]="props.placeholder || ''" [formControl]="formControl" [formlyAttributes]="field"
+    appearance="hero">
+    <nb-option *ngFor="let item of props.options|formlySelectOptions:field|async "
+      [value]="item.value">{{item.label}}</nb-option>
+  </nb-select>
+</div>

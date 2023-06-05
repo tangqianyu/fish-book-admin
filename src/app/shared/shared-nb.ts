@@ -8,7 +8,8 @@ import {
   NbContextMenuModule,
   NbButtonModule,
   NbSelectModule,
-  NbIconModule
+  NbIconModule,
+  NbSpinnerModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
@@ -23,5 +24,6 @@ export const NB_MODULES = [
   NbButtonModule,
   NbSelectModule,
   NbIconModule,
-  NbEvaIconsModule
+  NbEvaIconsModule,
+  NbSpinnerModule
 ];

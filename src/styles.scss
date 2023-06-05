@@ -9,3 +9,18 @@
 
 // @import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+.form-group{
+  label{
+    margin-bottom: 0.5rem;
+    display: inline-block
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}

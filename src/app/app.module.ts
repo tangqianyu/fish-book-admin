@@ -14,7 +14,6 @@ import {
   NbWindowModule
 } from '@nebular/theme';
 import { LayoutModule } from './layout/layout.module';
-import { FormlyModule } from '@ngx-formly/core';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,7 +27,6 @@ import { FormlyModule } from '@ngx-formly/core';
     NbDialogModule.forRoot(),
     NbWindowModule.forRoot(),
     NbToastrModule.forRoot(),
-    FormlyModule.forRoot(),
     NbThemeModule.forRoot({ name: 'material-light' }),
     LayoutModule
   ],
