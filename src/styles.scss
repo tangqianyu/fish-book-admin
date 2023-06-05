@@ -1,0 +1,11 @@
+@use './styles/themes.scss' as *;
+@use '@nebular/theme/styles/globals' as *;
+@use './styles/material-overrides' as *;
+
+@include nb-install() {
+  @include nb-theme-global();
+  @include material-overrides();
+}
+
+// @import 'tailwindcss/utilities';
+/* You can add global styles to this file, and also import other style files */

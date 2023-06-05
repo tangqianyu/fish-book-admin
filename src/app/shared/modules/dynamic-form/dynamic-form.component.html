@@ -1,0 +1,20 @@
+<ng-container *ngIf="layout === 'block'">
+  <form [formGroup]="dynamicForm" (ngSubmit)="submit()">
+    <formly-form [form]="dynamicForm" [fields]="formFields" [model]="model"></formly-form>
+    <div class="flex gap-3">
+      <button *ngIf="submitText !== null"  [status]="submitStatus" nbButton hero>{{submitText}}</button>
+      <button *ngIf="resetText !== null"  [status]="resetStatus" nbButton hero>{{resetText}}</button>
+    </div>
+  </form>
+</ng-container>
+
+
+<ng-container *ngIf="layout === 'inline'">
+  <form class="flex items-center" [formGroup]="dynamicForm" (ngSubmit)="submit()">
+    <formly-form [form]="dynamicForm" [fields]="formFields" [model]="model"></formly-form>
+    <div class="flex gap-3 ml-3">
+      <button *ngIf="submitText !== null"  [status]="submitStatus" nbButton hero>{{submitText}}</button>
+      <button *ngIf="resetText !== null"  [status]="resetStatus" nbButton hero>{{resetText}}</button>
+    </div>
+  </form>
+</ng-container>

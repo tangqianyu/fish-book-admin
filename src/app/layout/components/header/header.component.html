@@ -1,0 +1,18 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a href="#" class="sidebar-toggle" (click)="toggleSidebar()">
+      <nb-icon [icon]="'menu-outline'"></nb-icon>
+    </a>
+    <a class="logo" href="#" (click)="navigateHome()">fish-<span>admin</span></a>
+  </div>
+</div>
+
+
+<div class="header-container">
+  <nb-actions size="small">
+    <nb-action class="user-action">
+      <nb-user [nbContextMenu]="[]" [onlyPicture]="true" [name]="'jack'" color="#fff">
+      </nb-user>
+    </nb-action>
+  </nb-actions>
+</div>
